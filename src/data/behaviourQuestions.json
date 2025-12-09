@@ -1,0 +1,136 @@
+[
+  {
+    "id": "q1",
+    "scenario": "Your team is facing a tight deadline for a project launch, and a critical bug is discovered two days before release. The bug requires significant code changes that could delay the launch.",
+    "prompt": "What would be your approach?",
+    "options": [
+      "Immediately inform stakeholders about the potential delay and work with the team to fix it properly",
+      "Apply a quick workaround to meet the deadline and plan to fix it properly after launch",
+      "Request overtime from the team to fix it without delaying the launch",
+      "Assess the severity and impact, then decide on the best course of action with team input"
+    ]
+  },
+  {
+    "id": "q2",
+    "scenario": "A team member consistently misses stand-up meetings and doesn't respond to messages promptly, affecting team collaboration and progress updates.",
+    "prompt": "How would you address this situation?",
+    "options": [
+      "Report the behavior to management immediately",
+      "Have a private conversation to understand if there are any challenges they're facing",
+      "Ignore it as long as their work gets done eventually",
+      "Publicly call them out in the next team meeting to set an example"
+    ]
+  },
+  {
+    "id": "q3",
+    "scenario": "You disagree with a technical decision made by your senior colleague. You believe your approach is more efficient and scalable.",
+    "prompt": "What's the best way to handle this?",
+    "options": [
+      "Follow their decision without question since they're more senior",
+      "Present your alternative approach with data and reasoning, then discuss the pros and cons",
+      "Implement your approach anyway since you're confident it's better",
+      "Escalate to management to decide between the two approaches"
+    ]
+  },
+  {
+    "id": "q4",
+    "scenario": "During a code review, you notice that a colleague's code has several security vulnerabilities that could expose sensitive user data.",
+    "prompt": "What's your immediate action?",
+    "options": [
+      "Approve the code to maintain good relationships and mention it casually later",
+      "Reject the PR with detailed comments about the security issues and suggest solutions",
+      "Fix the vulnerabilities yourself without telling them to save time",
+      "Report the security issues to your manager before discussing with the colleague"
+    ]
+  },
+  {
+    "id": "q5",
+    "scenario": "You're assigned to work on a legacy codebase with poor documentation and no clear owner. The code is difficult to understand and needs major refactoring.",
+    "prompt": "How do you proceed?",
+    "options": [
+      "Request to be reassigned to a different project",
+      "Spend time understanding the code, document as you go, and propose incremental improvements",
+      "Rewrite everything from scratch to make it cleaner",
+      "Make only the minimum changes needed for your current task"
+    ]
+  },
+  {
+    "id": "q6",
+    "scenario": "A stakeholder requests a feature that you know would create significant technical debt and make the system harder to maintain in the future.",
+    "prompt": "What's your response?",
+    "options": [
+      "Implement it as requested since stakeholders know business needs better",
+      "Refuse to implement it and explain why it's technically problematic",
+      "Present the technical concerns, propose alternative solutions, and let them make an informed decision",
+      "Implement it poorly on purpose to prove your point about technical debt"
+    ]
+  },
+  {
+    "id": "q7",
+    "scenario": "You accidentally deployed code that broke a non-critical feature in production. It's Friday evening and the fix would take about 2 hours.",
+    "prompt": "What do you do?",
+    "options": [
+      "Leave it until Monday since it's non-critical",
+      "Stay and fix it immediately to restore full functionality",
+      "Roll back the deployment and investigate the issue on Monday",
+      "Notify the team and assess the impact before deciding on immediate action or Monday resolution"
+    ]
+  },
+  {
+    "id": "q8",
+    "scenario": "Two team members are having an ongoing conflict about coding standards that's creating tension and slowing down work.",
+    "prompt": "As a team member observing this, what would you do?",
+    "options": [
+      "Stay out of it since it's not your problem",
+      "Take sides with whoever you think is right",
+      "Suggest a team discussion to establish agreed-upon coding standards documented for everyone",
+      "Report the conflict to management immediately"
+    ]
+  },
+  {
+    "id": "q9",
+    "scenario": "You're in the middle of implementing a complex feature when you're asked to help a junior developer who is stuck on their task.",
+    "prompt": "How do you balance both responsibilities?",
+    "options": [
+      "Tell them you're too busy and they should figure it out themselves",
+      "Immediately drop what you're doing to help them completely",
+      "Take a 15-minute break to understand their issue, point them in the right direction, and schedule time later if needed",
+      "Ask them to wait until you complete your feature entirely"
+    ]
+  },
+  {
+    "id": "q10",
+    "scenario": "You realize that a feature you delivered last week has a performance issue that wasn't caught in testing. It's now affecting some users.",
+    "prompt": "What's your approach?",
+    "options": [
+      "Wait to see if anyone formally reports it before taking action",
+      "Immediately investigate, create a fix, and communicate the issue and resolution to relevant parties",
+      "Blame the testing process for not catching it",
+      "Quietly fix it without telling anyone to avoid looking bad"
+    ]
+  },
+  {
+    "id": "q11",
+    "scenario": "Your manager asks you to estimate how long a feature will take. You think it will take 2 weeks, but you're not entirely certain.",
+    "prompt": "What do you communicate?",
+    "options": [
+      "Say 1 week to impress them with your speed",
+      "Say 2 weeks and hope you can deliver faster to exceed expectations",
+      "Say 3-4 weeks to give yourself plenty of buffer time",
+      "Say 2 weeks with the caveat that there are unknowns that could extend the timeline"
+    ]
+  },
+  {
+    "id": "q12",
+    "scenario": "You receive constructive criticism during a performance review about an area where you need improvement.",
+    "prompt": "How do you respond?",
+    "options": [
+      "Defend yourself and explain why the criticism isn't fair",
+      "Thank them for the feedback, ask for specific examples, and create an improvement plan",
+      "Agree outwardly but dismiss it internally",
+      "Get upset and consider looking for a new job"
+    ]
+  }
+]
+
+

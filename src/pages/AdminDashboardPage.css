@@ -1,0 +1,237 @@
+/* Center the entire dashboard on the screen */
+.admin-dashboard {
+    min-height: 100vh;                 /* full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;           /* vertical center */
+    align-items: center;               /* horizontal center */
+    padding-top: 0rem;                 /* move content up */
+    padding-bottom: 2rem;
+    background: linear-gradient(180deg, #f9fafb 0%, #ffffff 60%);
+}
+
+.admin-dashboard__header {
+    margin-bottom: 0.4rem;
+}
+
+.admin-dashboard__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: #6c63ff;
+  margin-bottom: 0.5rem;
+}
+
+.admin-dashboard__subcopy {
+  max-width: 620px;
+  color: #5f6472;
+}
+
+.admin-dashboard__panel {
+  max-width: 520px;
+  border-radius: 16px;
+  border: 1px solid #e0e7ff;
+  background-color: #ffffff;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 12px 30px rgba(92, 89, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.admin-dashboard__field label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.admin-dashboard__field select {
+  border-radius: 999px;
+  border: 1px solid #cbd5f5;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+}
+
+.file-upload-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  background-color: #6c63ff;
+  color: #ffffff;
+  padding: 0.7rem 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.file-upload-label input[type='file'] {
+  display: none;
+}
+
+.file-upload-label:hover {
+  background-color: #5850ec;
+}
+
+.admin-dashboard__submit {
+  align-self: flex-start;
+  background-color: #111827;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-dashboard__submit:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.admin-dashboard__message {
+  font-size: 0.9rem;
+}
+
+.admin-dashboard__message--error {
+  color: #b91c1c;
+}
+
+.admin-dashboard__message--success {
+  color: #15803d;
+}
+
+
+/* Toggle Buttons */
+.toggle-group {
+    display: flex;
+    background: #eef2ff;
+    padding: 6px;
+    border-radius: 999px;
+    width: fit-content;
+}
+
+.toggle-btn {
+    border: none;
+    background: transparent;
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4b5563;
+}
+
+.toggle-btn.active {
+    background: #6c63ff;
+    color: #fff;
+}
+
+/* File Upload Droppable Area */
+.file-drop-area {
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.file-drop-area:hover {
+    border-color: #6c63ff;
+}
+
+.file-drop-area input {
+    display: none;
+}
+
+.file-drop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.upload-icon {
+    font-size: 2.2rem;
+    opacity: 0.6;
+}
+
+.drop-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.file-hint {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+/* Submit Button */
+.admin-dashboard__submit {
+    align-self: flex-start;
+    background-color: #111827;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin-dashboard__submit:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+/* ----- SUCCESS POPUP OVERLAY ----- */
+.success-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.success-popup-box {
+    background: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    animation: scaleUp 0.25s ease-out;
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #22c55e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    margin: 0 auto 1rem;
+}
+
+@keyframes scaleUp {
+    0% { transform: scale(0.6); opacity: 0.4; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.success-text {
+    font-size: 1.2rem;
+    font-weight: 700; /* BOLD */
+    color: #1a1a1a;
+    margin-top: 0.5rem;
+}
+
+

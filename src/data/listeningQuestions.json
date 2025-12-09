@@ -1,0 +1,220 @@
+{
+  "mcq": [
+    {
+      "id": "q1",
+      "prompt": "When did the issue start in production?",
+      "options": [
+        "A. Thursday at 3:00 PM",
+        "B. Friday at around 11:30 AM",
+        "C. Saturday at 9:15 AM",
+        "D. Last Monday at 4:45 PM"
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "What new feature was deployed?",
+      "options": [
+        "A. Route optimization",
+        "B. Shipment delay prediction using real-time data",
+        "C. Customer notification module",
+        "D. Invoice generation service"
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "What symptom did users report after deployment?",
+      "options": [
+        "A. Incorrect pricing",
+        "B. Missing shipments",
+        "C. Slow page loads and intermittent errors",
+        "D. App not opening"
+      ]
+    },
+    {
+      "id": "q4",
+      "prompt": "What was the team’s initial suspicion?",
+      "options": [
+        "A. API rate limit issue",
+        "B. Network outage",
+        "C. Database indexing issue",
+        "D. CPU overload in production"
+      ]
+    },
+    {
+      "id": "q5",
+      "prompt": "What was the actual root cause?",
+      "options": [
+        "A. Faulty rollout script",
+        "B. Misconfigured load balancer",
+        "C. Weather API latency increased to nearly 2 seconds",
+        "D. Missing security patch"
+      ]
+    },
+    {
+      "id": "q6",
+      "prompt": "What immediate action did the team take to avoid a system outage?",
+      "options": [
+        "A. Restarted all servers",
+        "B. Switched to historical data using a fallback mechanism",
+        "C. Increased server memory",
+        "D. Rolled back the entire platform"
+      ]
+    },
+    {
+      "id": "q7",
+      "prompt": "Which long-term fixes were planned? (Choose the correct combination)",
+      "options": [
+        "A. Rewriting the entire prediction feature",
+        "B. Asynchronous data fetching + caching layer + API timeout",
+        "C. Increasing database connections only",
+        "D. Using a different weather provider only"
+      ]
+    },
+    {
+      "id": "q8",
+      "prompt": "What is the expiry time planned for the caching layer?",
+      "options": [
+        "A. 30 minutes",
+        "B. 1 minute",
+        "C. 5 minutes",
+        "D. 10 minutes"
+      ]
+    },
+    {
+      "id": "q9",
+      "prompt": "What timeout will be set for external API calls?",
+      "options": [
+        "A. 500 ms",
+        "B. 1 second",
+        "C. 5 seconds",
+        "D. 2 seconds"
+      ]
+    },
+    {
+      "id": "q10",
+      "prompt": "What must the infrastructure team update before deployments resume?",
+      "options": [
+        "A. CI/CD pipelines",
+        "B. Load balancing rules",
+        "C. Monitoring dashboards for API latency",
+        "D. The entire logging framework"
+      ]
+    },
+    {
+      "id": "q11",
+      "prompt": "Which microservice was affected by the issue?",
+      "options": [
+        "A. Shipment microservice",
+        "B. Authentication microservice",
+        "C. Payment processing microservice",
+        "D. Notification microservice"
+      ]
+    },
+    {
+      "id": "q12",
+      "prompt": "What happened right before the issue started?",
+      "options": [
+        "A. Database migration",
+        "B. Deployment of a new version",
+        "C. Network maintenance",
+        "D. API key rotation"
+      ]
+    },
+    {
+      "id": "q13",
+      "prompt": "Why did the team initially suspect a database issue?",
+      "options": [
+        "A. Database connection failures",
+        "B. Increased number of deadlocks",
+        "C. CPU usage on the database spiked by nearly 40%",
+        "D. Missing database indexes"
+      ]
+    },
+    {
+      "id": "q14",
+      "prompt": "What was the rate limit of the new third-party API?",
+      "options": [
+        "A. 50 requests per minute",
+        "B. 200 requests per minute",
+        "C. 100 requests per minute",
+        "D. 500 requests per minute"
+      ]
+    },
+    {
+      "id": "q15",
+      "prompt": "What operational impact did the rate limiting cause?",
+      "options": [
+        "A. Payments were getting duplicated",
+        "B. Requests were queuing and slowing down the service",
+        "C. Security rules were overridden",
+        "D. All requests were being rejected with 5xx errors"
+      ]
+    },
+    {
+      "id": "q16",
+      "prompt": "What additional factor increased system load during the issue?",
+      "options": [
+        "A. Network congestion",
+        "B. Multiple retry attempts in the logs",
+        "C. Missing indexes on staging database",
+        "D. Increased customer traffic"
+      ]
+    },
+    {
+      "id": "q17",
+      "prompt": "What temporary solution did the team apply?",
+      "options": [
+        "A. Introduced caching immediately",
+        "B. Increased API rate limits",
+        "C. Rolled back to the previous stable version",
+        "D. Disabled fraud detection entirely"
+      ]
+    },
+    {
+      "id": "q18",
+      "prompt": "Which library will be used for implementing circuit breakers?",
+      "options": [
+        "A. Hystrix",
+        "B. Resilience4j",
+        "C. Istio",
+        "D. Spring Retry"
+      ]
+    },
+    {
+      "id": "q19",
+      "prompt": "What is the deadline for completing the long-term improvements?",
+      "options": [
+        "A. This Friday",
+        "B. Next Monday",
+        "C. Next Wednesday",
+        "D. Next Thursday"
+      ]
+    },
+    {
+      "id": "q20",
+      "prompt": "Which configuration values were found missing in staging?",
+      "options": [
+        "A. fraud.api.key and fraud.api.secret",
+        "B. fraud.api.timeout and fraud.api.enabled",
+        "C. fraud.api.token and fraud.api.version",
+        "D. fraud.api.cache.ttl and fraud.api.limit"
+      ]
+    }
+  ],
+  "written": [
+    {
+      "id": "w1",
+      "prompt": "11. Write a user story based on the incident described in the audio."
+    },
+    {
+      "id": "w2",
+      "prompt": "12. Write detailed acceptance criteria for the fixes mentioned in the audio."
+    },
+    {
+      "id": "w3",
+      "prompt": "13. Prepare release notes for the update planned for next Tuesday."
+    }
+  ]
+}
+
+

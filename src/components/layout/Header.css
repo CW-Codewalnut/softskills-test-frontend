@@ -1,0 +1,28 @@
+.cw-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height, 72px);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  z-index: 50;
+}
+
+.cw-logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cw-logo img {
+  height: 52px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+

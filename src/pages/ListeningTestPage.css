@@ -1,0 +1,259 @@
+.listening-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #0f172a;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.listening-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.listening-header-content {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.listening-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.5rem;
+}
+
+.listening-nav {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.nav-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.listening-nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.35rem 0;
+  font-weight: 600;
+}
+
+.listening-nav a:hover {
+  color: #c7d2fe;
+}
+
+.listening-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.listening-panel {
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+  text-align: left;
+}
+
+.panel-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.panel-subtitle {
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+audio {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.audio-wrapper {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.play-count {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0f172a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 15px 30px rgba(15, 23, 42, 0.3);
+}
+
+.audio-disabled {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  pointer-events: all;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.questions-list {
+  padding-left: 0;
+  line-height: 1.7;
+  color: #0f172a;
+  list-style-position: inside;
+}
+
+.questions-list li {
+  margin-bottom: 0.75rem;
+}
+
+.question-text {
+  font-weight: 600;
+}
+
+.text-question {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.text-question textarea {
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5f5;
+  padding: 0.75rem;
+  resize: vertical;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #0f172a;
+  background: #f8fafc;
+  min-height: 120px;
+}
+
+.text-question textarea:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.5rem;
+  background: #f8fafc;
+}
+
+.option-row input[type='radio'] {
+  accent-color: #4f46e5;
+}
+
+.listening-panel button {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: #0f172a;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.listening-panel button:hover {
+  background: #111b34;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 10;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 480px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 25px 70px rgba(15, 23, 42, 0.25);
+}
+
+.modal h2 {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.modal-list {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+.modal button {
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: #4f46e5;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal button:hover {
+  background: #3e36c4;
+}
+
+@media (max-width: 900px) {
+  .listening-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .listening-nav {
+    position: static;
+  }
+}
+

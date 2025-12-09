@@ -1,0 +1,35 @@
+.cw-footer {
+  margin-top: auto;
+  width: 100%;
+  min-height: var(--header-height, 72px);
+  padding: 0 2rem;
+  background: #05060f;
+  color: #cdd2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer-copy {
+  max-width: 600px;
+  margin: 0.25rem 0 0;
+}
+
+.footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #9096c9;
+  justify-content: center;
+  text-align: center;
+}
+
