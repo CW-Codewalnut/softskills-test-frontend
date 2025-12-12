@@ -1,7 +1,14 @@
 {
-    "name": "cw-walnutsense",
-    "compatibility_date": "2025-12-12",
-    "assets": {
-        "directory": "./dist"
+  // wrangler.jsonc
+  "name": "softskills-test-frontend",
+  "compatibility_date": "2025-12-12",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "cw-softskills.codewalnut.com",
+      "custom_domain": true
     }
+  ]
 }
